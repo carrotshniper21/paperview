@@ -36,7 +36,7 @@ and the right, a river animation:
 
 Append an (&) to a paperview command to have it run as a background process. Eg:
 
-    ./paperview FOLDER SPEED &
+    ./paperview FOLDER &
 
 To stop this backgroud process, use `killall`:
 
@@ -47,10 +47,10 @@ To stop this backgroud process, use `killall`:
 Creating a custom BMP scene folder from a GIF requires imagemagick.
 For example, to create a castle scene folder from a castle.gif:
 
-    mkdir castle
-    mv castle.gif castle
-    cd castle
-    convert -coalesce castle.gif out.bmp
+    mkdir cyberpunk
+    mv cyberpunk.gif cyberbunk-bmp
+    cd cyberpunk
+    convert -coalesce cyberpunk.gif cyberpunk-bmp.bmp
     rm castle.gif
 
 ## Random Animated Wallpapers at Startup
@@ -69,6 +69,6 @@ or simply execute it after X11 is running:
 
 Running on a Thinkpad X230 from 2012 at 1920x1080 and 60fps with an integrated Intel GPU:
 
-    intel_gpu_time ./paperview castle 5
+    intel_gpu_time ./paperview cyberpunk-bmp
 
     user: 1.904135s, sys: 0.357277s, elapsed: 100.458648s, CPU: 2.3%, GPU: 11.7%
