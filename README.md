@@ -8,29 +8,19 @@ Video of the above screenshot: https://www.youtube.com/watch?v=6ZTiA885bWM
 
 ## Build
 
-    make # NOTE: SDL2 is required
+    make
 
 ## Single Monitor Use
 
-    ./paperview FOLDER SPEED
+    ./paperview FOLDER
 
-A lower SPEED number will result in a faster frame rate. Only BMP files are supported.
+Only BMP files are supported.
 
 ## Multi Monitor Use
 
 Paperview supports any number of monitors with its dynamic parameter list:
 
-    ./paperview FOLDER SPEED X Y W H FOLDER SPEED X Y W H # ... And so on
-
-The values X, Y, W (width), H (height) are integers and represent a rectangle with pixel
-dimensions specifying where the wallpaper animation will be placed.
-For instance, with a 1366x768 monitor on the left and a 1920x1080 monitor on the right,
-the following command will animate the left monitor with a cat animation,
-and the right, a river animation:
-
-    ./paperview \
-        ~/scenes/cat   5    0   0 1366  768 \
-        ~/scenes/river 5 1366   0 1928 1080
+    ./paperview FOLDER
 
 ## Running Background Daemon
 
