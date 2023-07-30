@@ -52,7 +52,7 @@ or simply execute it after X11 is running:
     while true
     do
         scene=$(ls -d ~/scenes/*/ | shuf -n 1)
-        timeout 600 paperview $scene 5 # See Multi-Monitor Use above for multiple monitor support
+        timeout 600 paperview $scene # See Multi-Monitor Use above for multiple monitor support
     done
 
 ## Performance
